@@ -1,0 +1,11 @@
+-- migrate:up
+CREATE TABLE compaines (
+    id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP 
+)
+
+-- migrate:down
+
+DROP TABLE compaines
